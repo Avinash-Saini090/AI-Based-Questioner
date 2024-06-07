@@ -5,14 +5,14 @@ https://www.doi.org/10.56726/IRJMETS51436
 AI-Based Questioner is an innovative application designed to enhance the self-assessment and learning experience of students. It uses artificial intelligence to generate and deliver real-time, personalized questions based on the content students engage with, such as video lectures or PDF documents. The application aims to bridge the gap between content consumption and effective self-assessment, promoting active learning and better comprehension.
 
 # Features:
-Dynamic Question Generation: AI generates questions in real time based on the content being consumed.
-Content Integration: Supports various formats like videos and PDFs.
-Interactive Learning: Encourages students to engage with the material through active questioning.
+1) Dynamic Question Generation: AI generates questions in real time based on the content being consumed.
+2) Content Integration: Supports various formats like videos and PDFs.
+3) Interactive Learning: Encourages students to engage with the material through active questioning.
 
 # Project Objectives:
-To offer a tool for students studying through electronic devices.
-To improve the learning experience by providing timely and relevant assessments.
-To enhance student engagement and comprehension through interactive learning techniques.
+1) To offer a tool for students studying through electronic devices.
+2) To improve the learning experience by providing timely and relevant assessments.
+3) To enhance student engagement and comprehension through interactive learning techniques.
 
 # Background and Context:
 The digital revolution in education has made learning more accessible and flexible. However, it has also highlighted the lack of comprehensive assessment tools in online education. Traditional methods of assessment in classrooms are often absent in online learning, making it difficult for students to gauge their understanding and progress. AI-Based Questioner addresses this gap by providing practice questions related to the content.
