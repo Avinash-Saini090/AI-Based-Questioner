@@ -2,7 +2,7 @@
 https://www.doi.org/10.56726/IRJMETS51436
 
 # Overview:
-AI_Based_Questioner is an innovative application designed to enhance the self-assessment and learning experience of students. It uses artificial intelligence to generate and deliver real-time, personalized questions based on the content students engage with, such as video lectures or PDF documents. The application aims to bridge the gap between content consumption and effective self-assessment, promoting active learning and better comprehension.
+AI-Based Questioner is an innovative application designed to enhance the self-assessment and learning experience of students. It uses artificial intelligence to generate and deliver real-time, personalized questions based on the content students engage with, such as video lectures or PDF documents. The application aims to bridge the gap between content consumption and effective self-assessment, promoting active learning and better comprehension.
 
 # Features:
 Dynamic Question Generation: AI generates questions in real time based on the content being consumed.
@@ -15,11 +15,11 @@ To improve the learning experience by providing timely and relevant assessments.
 To enhance student engagement and comprehension through interactive learning techniques.
 
 # Background and Context:
-The digital revolution in education has made learning more accessible and flexible. However, it has also highlighted the lack of comprehensive assessment tools in online education. Traditional methods of assessment in classrooms are often absent in online learning, making it difficult for students to gauge their understanding and progress. AI_Based_Questioner addresses this gap by integrating real-time assessments with digital content.
+The digital revolution in education has made learning more accessible and flexible. However, it has also highlighted the lack of comprehensive assessment tools in online education. Traditional methods of assessment in classrooms are often absent in online learning, making it difficult for students to gauge their understanding and progress. AI-Based Questioner addresses this gap by providing practice questions related to the content.
 
 # Installation:
 Clone the repository using git clone or download zipped folder
-Navigate to the project directory: cd AI_Based_Questioner
+Navigate to the project directory
 Open the project in Android Studio or VS Code.
 Install the required packages mentioned in requirements.txt
 Build and run the project on your preferred platform.
