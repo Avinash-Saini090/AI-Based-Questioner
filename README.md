@@ -18,11 +18,11 @@ To enhance student engagement and comprehension through interactive learning tec
 The digital revolution in education has made learning more accessible and flexible. However, it has also highlighted the lack of comprehensive assessment tools in online education. Traditional methods of assessment in classrooms are often absent in online learning, making it difficult for students to gauge their understanding and progress. AI-Based Questioner addresses this gap by providing practice questions related to the content.
 
 # Installation:
-Clone the repository using git clone or download zipped folder
-Navigate to the project directory
-Open the project in Android Studio or VS Code.
-Install the required packages mentioned in requirements.txt
-Build and run the project on your preferred platform.
+1) Clone the repository using git clone or download zipped folder
+2) Navigate to the project directory
+3) Open the project in Android Studio or VS Code.
+4) Install the required packages mentioned in requirements.txt
+5) Build and run the project on your preferred platform.
 
 # Usage:
 Upload a PDF file or provide a video.
