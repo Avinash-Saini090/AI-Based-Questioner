@@ -18,7 +18,7 @@ To enhance student engagement and comprehension through interactive learning tec
 The digital revolution in education has made learning more accessible and flexible. However, it has also highlighted the lack of comprehensive assessment tools in online education. Traditional methods of assessment in classrooms are often absent in online learning, making it difficult for students to gauge their understanding and progress. AI_Based_Questioner addresses this gap by integrating real-time assessments with digital content.
 
 # Installation:
-Clone the repository: git clone https://github.com/yourusername/AI_Based_Questioner.git
+Clone the repository using git clone or download zipped folder
 Navigate to the project directory: cd AI_Based_Questioner
 Open the project in Android Studio or VS Code.
 Install the required packages mentioned in requirements.txt
