@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='pdf.css') }}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="col-md-6">
+        <h1 class="pdfw">PDF Viewer</h1>
+        <embed
+          src="{{ url_for('static', filename='uploads/' + filename) }}"
+          type="application/pdf"
+          width="50%"
+          height="300px"
+        />
+      </div>
+      <div class="col-md-6">
+        <h1 class="que">Questions</h1>
+        <div class="question-cards" id="question-list"></div>
+        <button id="generate-questions" class="btn btn-primary">Generate Questions</button>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#generate-questions").click(function () {
+          $(this).prop("disabled", true);
+          $.ajax({
+            url: "/pdf_questions",
+            method: "GET",
+            success: function (data) {
+              $("#question-list").empty();
+              for (var i = 0; i < data.questions.length; i++) {
+                $("#question-list").append(
+                  `<div class='card border-success mb-3' style='max-width: 58rem;'>
+                    <div class='card-header bg-transparent border-success'> 
+                      Question ${i + 1} : ${data.questions[i][0]}
+                    </div>
+                    <div class="card-body">
+                      <div style="display: flex; justify-content: space-between">
+                      <h5 style="margin-right:7px;">Answer</h5>
+                      <button id="showAns${i+1}" class="btn btn-primary" onclick="toggleAnswer(${i+1})">Show Answer</button>
+                    </div>
+                    <p class='card-text' style="display:none" id='answer${i+1}'> ${
+                      data.questions[i][1] }
+                    </p>
+                    </div>
+                  </div>`
+                );
+              }
+              $("#generate-questions").prop("disabled", false);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+              alert("Failed to generate questions: " + errorThrown);
+              $("#generate-questions").prop("disabled", true);
+            },
+          });
+        });
+      });
+      function toggleAnswer(index) {
+        const answerElement = document.getElementById(`answer${index}`);
+        const buttonElement = document.getElementById(`showAns${index}`);
+        if (answerElement.style.display === "none") {
+          answerElement.style.display = "block";
+          buttonElement.textContent = "Hide Answer";
+        } else {
+          answerElement.style.display = "none";
+          buttonElement.textContent = "Show Answer";
+        }
+      }
+    </script>
+  </body>
+</html>

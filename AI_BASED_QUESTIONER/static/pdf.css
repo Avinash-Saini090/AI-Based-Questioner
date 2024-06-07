@@ -1,0 +1,79 @@
+/* PDF Viewer Styles */
+embed {
+  height: 80vh;
+  width: 100%;
+  display: block;
+  margin: auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Area Styles */
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+
+.btn {
+  background-color: #3e8e41;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #15f4aa;
+}
+
+.col-md-6:first-child {
+  background-color: #f5f5f5;
+  overflow: hidden;
+  flex: 0 0 50%; /* Adjust width as needed */
+}
+
+.col-md-6:last-child {
+  background-color: #f8f9fa;
+  overflow-y: scroll;
+  flex: 1; /* Allow questions section to fill remaining space */
+  padding: 20px; /* Add padding for better readability */
+}
+
+/* Headings */
+h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Questions Section */
+.question-cards {
+  margin-bottom: 20px;
+}
+
+.card {
+  border-color: #e0e0e0;
+  margin-bottom: 15px; /* Add spacing between question cards */
+}
+
+.card-header {
+  background-color: #f0f0f0; /* Lighter background for headers */
+  font-weight: bold; /* Make question numbers bolder */
+}
+
+.pdfw{
+  margin-left: 39%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+.que{
+  margin-left: 39%;
+  margin-bottom: 20px;
+  
+}
